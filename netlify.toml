@@ -1,0 +1,8 @@
+[build]
+  publish = "dist" # or the name of your build output directory
+  command = "npm run build" #  Or yarn build. The command Netlify will run.
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200 # This redirect is important for Single Page Applications (SPAs) like Vite apps
